@@ -10,13 +10,19 @@
     <link rel="shortcut icon" href="_imagem/favicon.ico" type="image/x-icon">
     <title>Gerador de senha</title>
 
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="_imagem/logo.png" alt="Logo do site Gerador de senhas">
+    <img class="logo" src="./_imagem/logo.png" alt="Logo do site Gerador de senhas">
     <main class="conteudo">
-        <span>Tamanho</span>
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="4" max="20" value="8">
+        <button id="button" class="button-cta">Gerar senha</button>
     </main>
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">123123123123</span>
+        <span>Clique na senha para copiar. &#x1F446</span>
+    </div>
 </body>
 </html>
